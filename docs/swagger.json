@@ -1,0 +1,3734 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "RESTAPI for Insatll Core",
+    "title": "OpenMSA Install Core API",
+    "contact": {},
+    "version": "1.0"
+  },
+  "paths": {
+    "/common/config/history": {
+      "post": {
+        "description": "Create Component Config File InHistoryfo",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Component-Config-File-History"
+        ],
+        "summary": "Create Component Config File History",
+        "parameters": [
+          {
+            "description": "Request Insert Component Config File History",
+            "name": "request",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/command.RequestCreateCompConfigFileHistory"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      }
+    },
+    "/common/config/history/search": {
+      "post": {
+        "description": "Search Component Config File InHistoryfo",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Component-Config-File-History"
+        ],
+        "summary": "Search Component Config File History",
+        "parameters": [
+          {
+            "description": "Request Search Component Config File History",
+            "name": "request",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/command.RequestSearchCompConfigFileHistory"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      }
+    },
+    "/common/config/history/{id}": {
+      "put": {
+        "description": "Update Component Config File History",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Component-Config-File-History"
+        ],
+        "summary": "Update Component Config File History",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "component_config_file_history_ id",
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      },
+      "delete": {
+        "description": "Delete Component Config File History",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Component-Config-File-History"
+        ],
+        "summary": "Delete Component Config File History",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "component_config_file_history_ id",
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      }
+    },
+    "/common/config/info": {
+      "post": {
+        "description": "Create Component Config File Info",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Component-Config-File-Info"
+        ],
+        "summary": "Create Component Config File Info",
+        "parameters": [
+          {
+            "description": "Request Insert Component Config File Info",
+            "name": "request",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/command.RequestCreateCompConfigFileInfo"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      }
+    },
+    "/common/config/info/search": {
+      "post": {
+        "description": "Search Component Config File Info",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Component-Config-File-Info"
+        ],
+        "summary": "Search Component Config File Info",
+        "parameters": [
+          {
+            "description": "Request Search Component Config File Info",
+            "name": "request",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/command.RequestSearchCompConfigFileInfo"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      }
+    },
+    "/common/config/info/{id}": {
+      "put": {
+        "description": "Update Component Config File Info",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Component-Config-File-Info"
+        ],
+        "summary": "Update Component Config File Info",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "component_config_file info id",
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      },
+      "delete": {
+        "description": "Delete Component Config File Info",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Component-Config-File-Info"
+        ],
+        "summary": "Delete Component Config File Info",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "component_config_file info id",
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      }
+    },
+    "/common/config/info/{installReqDetailId}": {
+      "post": {
+        "description": "Search Component Config_file_info With install_info_detail_id",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Component-Install-Info"
+        ],
+        "summary": "Search Component Config_file_info",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "installReqDetailId",
+            "name": "fieldName",
+            "in": "path",
+            "required": true
+          },
+          {
+            "description": "Search Component Config_file_info With install_info_detail_id",
+            "name": "request",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/command.RequestSearchComConfigFileInfoWithHistory"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      }
+    },
+    "/common/install/detail": {
+      "post": {
+        "description": "Create Component Install Request Detail",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Component-Install-Detail"
+        ],
+        "summary": "Create Component Install Request Detail",
+        "parameters": [
+          {
+            "description": "Request Insert Install Request Detail Info",
+            "name": "request",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/command.RequestInsertInstallReqDetailInfo"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      }
+    },
+    "/common/install/detail/search": {
+      "post": {
+        "description": "Search Component Install Request Detail",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Component-Install-Detail"
+        ],
+        "summary": "Search Component Install Request Detail",
+        "parameters": [
+          {
+            "description": "Request Search Install Request Detail Info",
+            "name": "request",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/command.RequestSearchInstallReqDetailInfo"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      }
+    },
+    "/common/install/detail/unique/{filedName}": {
+      "get": {
+        "description": "Search Search Unique FiledName",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Component-Install-Detail-Info"
+        ],
+        "summary": "Search Unique FiledName",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "FieldName",
+            "name": "fieldName",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      }
+    },
+    "/common/install/detail/{id}": {
+      "put": {
+        "description": "Update Component Install Request Detail",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Component-Install-Detail"
+        ],
+        "summary": "Update Component Install Request Detail",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "install detail info id",
+            "name": "id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "description": "Request Update Install Request Detail Info",
+            "name": "request",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/command.RequestUpdateInstallReqDetailInfo"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      },
+      "delete": {
+        "description": "Delete Component Install Request Detail",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Component-Install-Detail"
+        ],
+        "summary": "Delete Component Install Request Detail",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "install detail info id",
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      }
+    },
+    "/common/install/history": {
+      "post": {
+        "description": "Create Component Install Request History",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Component-Install-History"
+        ],
+        "summary": "Create Component Install Request History",
+        "parameters": [
+          {
+            "description": "Request Insert Install Request History",
+            "name": "request",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/command.RequestInsertInstallReqHistory"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      }
+    },
+    "/common/install/history/search": {
+      "post": {
+        "description": "Search Component Install Request History",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Component-Install-History"
+        ],
+        "summary": "Search Component Install Request History",
+        "parameters": [
+          {
+            "description": "Request Search Install Request History",
+            "name": "request",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/command.RequestSearchInstallReqHistory"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      }
+    },
+    "/common/install/history/{id}": {
+      "put": {
+        "description": "Update Component Install Request History",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Component-Install-History"
+        ],
+        "summary": "Update Component Install Request History",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Install Request History Id",
+            "name": "id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "description": "Request Update Install Request History",
+            "name": "request",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/command.RequestUpdateInstallReqHistory"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      }
+    },
+    "/common/install/info": {
+      "post": {
+        "description": "Create Component Install Request Info",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Component-Install-Info"
+        ],
+        "summary": "Create Component Install Request Info",
+        "parameters": [
+          {
+            "description": "Request Insert Install Request Info",
+            "name": "request",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/command.RequestInsertInstallReqInfo"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      }
+    },
+    "/common/install/info/search": {
+      "post": {
+        "description": "Search Component Install Request Info",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Component-Install-Info"
+        ],
+        "summary": "Search Component Install Request Info",
+        "parameters": [
+          {
+            "description": "Request Search Install Request Info",
+            "name": "request",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/command.RequestSearchInstallReqInfo"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      }
+    },
+    "/common/install/info/unique/{filedName}": {
+      "get": {
+        "description": "Search Search Unique FiledName",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Component-Install-Info"
+        ],
+        "summary": "Search Unique FiledName",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "FieldName",
+            "name": "fieldName",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      }
+    },
+    "/common/install/info/{id}": {
+      "put": {
+        "description": "Update Component Install Request Info",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Component-Install-Info"
+        ],
+        "summary": "Update Component Install Request Info",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Install Request Info Id",
+            "name": "id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "description": "Request Update Install Request Info",
+            "name": "request",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/command.RequestUpdateInstallReqInfo"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      },
+      "delete": {
+        "description": "Delete Component Install Request Info",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Component-Install-Info"
+        ],
+        "summary": "Delete Component Install Request Info",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Install Request Info Id",
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      }
+    },
+    "/common/install/search": {
+      "post": {
+        "description": "Search Component Install Request Info With Install_Request_Detail_Info",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Component-Install-Info"
+        ],
+        "summary": "Search Component Install Request Info With Install_Request_Detail_Info",
+        "parameters": [
+          {
+            "description": "Request Search Install Request Info With Install_Request_Detail_Info",
+            "name": "request",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/command.RequestSearchInstallInfoWithDetail"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      }
+    },
+    "/config": {
+      "post": {
+        "description": "Insert Stored Component Config File Contents",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Stored Component Config File"
+        ],
+        "summary": "Insert Stored Component Config File Contents",
+        "parameters": [
+          {
+            "description": "Request Update Stored Component Config File List And Contents",
+            "name": "request",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/command.RequestUpdateCompConfigContents"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      }
+    },
+    "/config/all": {
+      "post": {
+        "description": "Search Stored Component Config File",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Stored Component Config File"
+        ],
+        "summary": "Search Stored Component Config File",
+        "parameters": [
+          {
+            "description": "Request Search  Stored Component Config File",
+            "name": "request",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/command.RequestSearchConfigFileInfo"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      }
+    },
+    "/default/config": {
+      "post": {
+        "description": "Search Default Component Config File List",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Default Component Config File"
+        ],
+        "summary": "Search Default Component Config File List",
+        "parameters": [
+          {
+            "description": "Request Search  Default Component Config File List",
+            "name": "request",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/command.RequestSearchDefaultCompConfigFile"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      }
+    },
+    "/default/config/all": {
+      "post": {
+        "description": "Search Default Component Config File List And Contents",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Default Component Config File"
+        ],
+        "summary": "Search Default Component Config File List And Contents",
+        "parameters": [
+          {
+            "description": "Request Search  Default Component Config File List And Contents",
+            "name": "request",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/command.RequestSearchDefaultCompConfigFile"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      }
+    },
+    "/default/config/{fileName}": {
+      "post": {
+        "description": "Search Default Component Config File Contents",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Default Component Config File"
+        ],
+        "summary": "Search Default Component Config File Contents",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "fileName",
+            "name": "fileName",
+            "in": "path",
+            "required": true
+          },
+          {
+            "description": "Request Search  Default Component Config File List And Contents",
+            "name": "request",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/command.RequestSearchDefaultCompConfigFile"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      }
+    },
+    "/k8s/info/cluster": {
+      "get": {
+        "description": "Search K8S Cluster Info",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "K8S-Cluster-Info"
+        ],
+        "summary": "Search K8S Cluster Info",
+        "parameters": [
+          {
+            "type": "integer",
+            "default": 0,
+            "description": "page number",
+            "name": "from",
+            "in": "query",
+            "required": true
+          },
+          {
+            "type": "integer",
+            "default": 10,
+            "description": "rows in page",
+            "name": "limit",
+            "in": "query",
+            "required": true
+          },
+          {
+            "type": "string",
+            "example": "\"kci-yyyymmddhhmmssXXX\"",
+            "description": "K8S Cluster Info id",
+            "name": "id",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "example": "\"cluster_name\"",
+            "description": "cluster name",
+            "name": "clusterName",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "cluster join token",
+            "name": "clusterToken",
+            "in": "query"
+          },
+          {
+            "enum": [
+              "INTERNAL",
+              "EXTERNAL"
+            ],
+            "type": "string",
+            "description": "etcd type",
+            "name": "etcdType",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "example": "\"2021-01-01 00:00:00\"",
+            "description": "from created at",
+            "name": "fromCreatedAt",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "example": "\"2021-01-01 00:00:00\"",
+            "description": "to created at",
+            "name": "toCreatedAt",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      },
+      "post": {
+        "description": "Create K8S Cluster Info",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "K8S-Cluster-Info"
+        ],
+        "summary": "Create K8S Cluster Info",
+        "parameters": [
+          {
+            "description": "Request Create K8S Cluster Info",
+            "name": "request",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/command.RequestCreateK8SClusterInfo"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      }
+    },
+    "/k8s/info/cluster/detail": {
+      "get": {
+        "description": "Search K8S Cluster Info",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "K8S-Cluster-Info"
+        ],
+        "summary": "Search K8S Cluster Info",
+        "parameters": [
+          {
+            "type": "integer",
+            "default": 0,
+            "description": "page number",
+            "name": "from",
+            "in": "query",
+            "required": true
+          },
+          {
+            "type": "integer",
+            "default": 10,
+            "description": "rows in page",
+            "name": "limit",
+            "in": "query",
+            "required": true
+          },
+          {
+            "type": "string",
+            "example": "\"kci-yyyymmddhhmmssXXX\"",
+            "description": "k8s cluster id",
+            "name": "clusterId",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "example": "\"cluster_name\"",
+            "description": "cluster name",
+            "name": "clusterName",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "example": "\"cluster_token\"",
+            "description": "cluster Token",
+            "name": "clusterToken",
+            "in": "query"
+          },
+          {
+            "enum": [
+              "READY",
+              "PROGRESS",
+              "SUCCESS",
+              "FAIL"
+            ],
+            "type": "string",
+            "example": "\"READY\"",
+            "description": "status ",
+            "name": "status",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "example": "\"yyyymmddhhmmssXXXXX\"",
+            "description": "UserKey",
+            "name": "userKey",
+            "in": "query"
+          },
+          {
+            "enum": [
+              "INTERNAL",
+              "EXTERNAL"
+            ],
+            "type": "string",
+            "description": "etcd type",
+            "name": "etcdType",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "example": "\"kcni-yyyymmddhhmmssXXX\"",
+            "description": "k8s node id",
+            "name": "nodeId",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "example": "\"node_name\"",
+            "description": "node name",
+            "name": "nodeName",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "example": "\"server_id\"",
+            "description": "server id",
+            "name": "serverId",
+            "in": "query"
+          },
+          {
+            "enum": [
+              "MASTER",
+              "WORKER"
+            ],
+            "type": "string",
+            "description": "role",
+            "name": "role",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      }
+    },
+    "/k8s/info/cluster/node": {
+      "get": {
+        "description": "Search K8S Cluster Node Info",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "K8S-Cluster-Node-Info"
+        ],
+        "summary": "Search K8S Cluster Node Info",
+        "parameters": [
+          {
+            "type": "string",
+            "default": "0",
+            "description": "from",
+            "name": "from",
+            "in": "query",
+            "required": true
+          },
+          {
+            "type": "string",
+            "default": "10",
+            "description": "limit",
+            "name": "limit",
+            "in": "query",
+            "required": true
+          },
+          {
+            "type": "string",
+            "description": "node id",
+            "name": "id",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "server id",
+            "name": "serverId",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "node name",
+            "name": "nodeName",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "role",
+            "name": "role",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "from created at",
+            "name": "fromCreatedAt",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "to created at",
+            "name": "toCreatedAt",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      },
+      "post": {
+        "description": "Create K8S Cluster Node Info",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "K8S-Cluster-Node-Info"
+        ],
+        "summary": "Create K8S Cluster Node Info",
+        "parameters": [
+          {
+            "description": "Request Create K8S Cluster Node Info",
+            "name": "request",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/command.RequestCreateK8SClusterNodeInfo"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      }
+    },
+    "/k8s/info/cluster/node/master/{clusterId}": {
+      "get": {
+        "description": "Search K8S Cluster Master Node by ClusterID",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "K8S-Cluster-Node-Info"
+        ],
+        "summary": "Search K8S Cluster Master Node by ClusterID",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "cluster id",
+            "name": "clusterId",
+            "in": "path"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      }
+    },
+    "/k8s/info/cluster/node/{id}": {
+      "get": {
+        "description": "Search K8S Cluster Node Info - 1 record",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "K8S-Cluster-Node-Info"
+        ],
+        "summary": "Search K8S Cluster Node Info - 1 record",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "K8S Cluster Node Info ID",
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      },
+      "put": {
+        "description": "Update K8S Cluster Node Info",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "K8S-Cluster-Node-Info"
+        ],
+        "summary": "Update K8S Cluster Node Info",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "K8S Cluster Node Info ID",
+            "name": "id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "description": "Request Update K8S Cluster Node Info",
+            "name": "request",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/command.RequestUpdateK8SClusterNodeInfo"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      },
+      "delete": {
+        "description": "Delete K8S Cluster Node Info",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "K8S-Cluster-Node-Info"
+        ],
+        "summary": "Delete K8S Cluster Node Info",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "K8S Cluster Node Info ID",
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      }
+    },
+    "/k8s/info/cluster/{id}": {
+      "get": {
+        "description": "Search K8S Cluster Info",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "K8S-Cluster-Info"
+        ],
+        "summary": "Search K8S Cluster Info - 1 record",
+        "parameters": [
+          {
+            "type": "string",
+            "example": "\"kci-yyyymmddhhmmssXXX\"",
+            "description": "K8S Cluster Info id",
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      },
+      "put": {
+        "description": "Update K8S Cluster Info",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "K8S-Cluster-Info"
+        ],
+        "summary": "Update K8S Cluster Info",
+        "parameters": [
+          {
+            "type": "string",
+            "example": "\"kci-yyyymmddhhmmssXXX\"",
+            "description": "K8S Cluster Info id",
+            "name": "id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "description": "updates options",
+            "name": "request",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/command.RequestUpdateK8SClusterInfo"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      },
+      "delete": {
+        "description": "Delete K8S Cluster Info",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "K8S-Cluster-Info"
+        ],
+        "summary": "Delete K8S Cluster Info",
+        "parameters": [
+          {
+            "type": "string",
+            "example": "\"kci-yyyymmddhhmmssXXX\"",
+            "description": "K8S Cluster Info id",
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      }
+    },
+    "/k8s/install/cluster": {
+      "get": {
+        "description": "Search K8S Install Request Cluster",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "K8S-Install-Cluster"
+        ],
+        "summary": "Search K8S Install Request Cluster",
+        "parameters": [
+          {
+            "type": "integer",
+            "default": 0,
+            "description": "page number",
+            "name": "from",
+            "in": "query",
+            "required": true
+          },
+          {
+            "type": "integer",
+            "default": 10,
+            "description": "rows in page",
+            "name": "limit",
+            "in": "query",
+            "required": true
+          },
+          {
+            "type": "string",
+            "example": "\"kirc-yyyymmddhhmmssXXX\"",
+            "description": "k8s install request cluster id",
+            "name": "id",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "example": "\"cluster_name\"",
+            "description": "cluster name",
+            "name": "clusterName",
+            "in": "query"
+          },
+          {
+            "enum": [
+              "READY",
+              "PROGRESS",
+              "SUCCESS",
+              "FAIL"
+            ],
+            "type": "string",
+            "example": "\"READY\"",
+            "description": "status ",
+            "name": "status",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "example": "\"yyyymmddhhmmssXXXXX\"",
+            "description": "UserKey",
+            "name": "userKey",
+            "in": "query"
+          },
+          {
+            "enum": [
+              "INTERNAL",
+              "EXTERNAL"
+            ],
+            "type": "string",
+            "description": "etcd type",
+            "name": "etcdType",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "example": "\"2021-01-01 00:00:00\"",
+            "description": "from createAt",
+            "name": "fromCreatedAt",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "example": "\"2021-01-01 00:00:00\"",
+            "description": "to createAt",
+            "name": "toCreatedAt",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "example": "\"2021-01-01 00:00:00\"",
+            "description": "from updateAt",
+            "name": "fromUpdatedAt",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "example": "\"2021-01-01 00:00:00\"",
+            "description": "to updateAt",
+            "name": "toUpdatedAt",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      },
+      "post": {
+        "description": "Create K8S Install Request Cluster",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "K8S-Install-Cluster"
+        ],
+        "summary": "Create K8S Install Request Cluster",
+        "parameters": [
+          {
+            "description": "Request Create K8S Install Cluster",
+            "name": "request",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/command.RequestCreateK8SInstallCluster"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      }
+    },
+    "/k8s/install/cluster/detail": {
+      "get": {
+        "description": "Search K8S Install Request Cluster InstallNodeInfo",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "K8S-Install-Cluster"
+        ],
+        "summary": "Search K8S Install Request Cluster with InstallNodeInfo",
+        "parameters": [
+          {
+            "type": "integer",
+            "default": 0,
+            "description": "page number",
+            "name": "from",
+            "in": "query",
+            "required": true
+          },
+          {
+            "type": "integer",
+            "default": 10,
+            "description": "rows in page",
+            "name": "limit",
+            "in": "query",
+            "required": true
+          },
+          {
+            "type": "string",
+            "example": "\"kirc-yyyymmddhhmmssXXX\"",
+            "description": "k8s install request cluster id",
+            "name": "installClusterId",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "example": "\"cluster_name\"",
+            "description": "cluster name",
+            "name": "clusterName",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "example": "\"cluster_token\"",
+            "description": "cluster Token",
+            "name": "clusterToken",
+            "in": "query"
+          },
+          {
+            "enum": [
+              "READY",
+              "PROGRESS",
+              "SUCCESS",
+              "FAIL"
+            ],
+            "type": "string",
+            "example": "\"READY\"",
+            "description": "status ",
+            "name": "status",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "example": "\"yyyymmddhhmmssXXXXX\"",
+            "description": "UserKey",
+            "name": "userKey",
+            "in": "query"
+          },
+          {
+            "enum": [
+              "INTERNAL",
+              "EXTERNAL"
+            ],
+            "type": "string",
+            "description": "etcd type",
+            "name": "etcdType",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "example": "\"kircn-yyyymmddhhmmssXXX\"",
+            "description": "k8s install request node id",
+            "name": "installNodeId",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "example": "\"node_name\"",
+            "description": "node name",
+            "name": "nodeName",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "example": "\"server_id\"",
+            "description": "server id",
+            "name": "serverId",
+            "in": "query"
+          },
+          {
+            "enum": [
+              "MASTER",
+              "WORKER"
+            ],
+            "type": "string",
+            "description": "role",
+            "name": "role",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      }
+    },
+    "/k8s/install/cluster/{id}": {
+      "get": {
+        "description": "Search K8S Install Request Cluster",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "K8S-Install-Cluster"
+        ],
+        "summary": "Search K8S Install Request Cluster - 1 record",
+        "parameters": [
+          {
+            "type": "string",
+            "example": "\"kirc-yyyymmddhhmmssXXX\"",
+            "description": "k8s install request cluster id",
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      },
+      "put": {
+        "description": "Update K8S Install Request Cluster",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "K8S-Install-Cluster"
+        ],
+        "summary": "Update K8S Install Request Cluster",
+        "parameters": [
+          {
+            "type": "string",
+            "example": "\"kirc-yyyymmddhhmmssXXX\"",
+            "description": "k8s install request cluster id",
+            "name": "id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "description": "updates options",
+            "name": "request",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/command.RequestUpdateK8sInstallCluster"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      },
+      "delete": {
+        "description": "Delete K8S Install Request Cluster",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "K8S-Install-Cluster"
+        ],
+        "summary": "Delete K8S Install Request Cluster",
+        "parameters": [
+          {
+            "type": "string",
+            "example": "\"kirc-yyyymmddhhmmssXXX\"",
+            "description": "k8s install request cluster id",
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      }
+    },
+    "/k8s/install/node": {
+      "get": {
+        "description": "Search K8S Install Request Node",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "K8S-Install-Node"
+        ],
+        "summary": "Search K8S Install Request Node",
+        "parameters": [
+          {
+            "type": "integer",
+            "default": 0,
+            "description": "page number",
+            "name": "from",
+            "in": "query",
+            "required": true
+          },
+          {
+            "type": "integer",
+            "default": 10,
+            "description": "rows in page",
+            "name": "limit",
+            "in": "query",
+            "required": true
+          },
+          {
+            "type": "string",
+            "example": "\"kirn-yyyymmddhhmmssXXX\"",
+            "description": "k8s install request node id",
+            "name": "id",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "example": "\"node_name\"",
+            "description": "node name",
+            "name": "nodeName",
+            "in": "query"
+          },
+          {
+            "enum": [
+              "READY",
+              "PROGRESS",
+              "SUCCESS",
+              "FAIL"
+            ],
+            "type": "string",
+            "example": "\"READY\"",
+            "description": "status ",
+            "name": "status",
+            "in": "query"
+          },
+          {
+            "enum": [
+              "MASTER",
+              "WORKER"
+            ],
+            "type": "string",
+            "example": "\"MASTER\"",
+            "description": "role",
+            "name": "role",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "example": "\"2021-01-01 00:00:00\"",
+            "description": "from created at",
+            "name": "fromCreatedAt",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "example": "\"2021-01-01 00:00:00\"",
+            "description": "to created at",
+            "name": "toCreatedAt",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "example": "\"2021-01-01 00:00:00\"",
+            "description": "from updated at",
+            "name": "fromUpdatedAt",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "example": "\"2021-01-01 00:00:00\"",
+            "description": "to updated at",
+            "name": "toUpdatedAt",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      },
+      "post": {
+        "description": "Create K8S Install Request Node",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "K8S-Install-Node"
+        ],
+        "summary": "Create K8S Install Request Node",
+        "parameters": [
+          {
+            "description": "Request Create K8S Install Node",
+            "name": "request",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/command.RequestCreateK8SInstallNode"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      }
+    },
+    "/k8s/install/node/hist": {
+      "get": {
+        "description": "Search K8S Install Request Node History",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "K8S-Install-NodeHistory"
+        ],
+        "summary": "Search K8S Install Request Node History",
+        "parameters": [
+          {
+            "type": "integer",
+            "default": 0,
+            "description": "page number",
+            "name": "from",
+            "in": "query",
+            "required": true
+          },
+          {
+            "type": "integer",
+            "default": 10,
+            "description": "rows in page",
+            "name": "limit",
+            "in": "query",
+            "required": true
+          },
+          {
+            "type": "string",
+            "example": "\"kirnh-yyyymmddhhmmssXXX\"",
+            "description": "k8s install request node history id",
+            "name": "id",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "example": "\"kirn-yyyymmddhhmmssXXX\"",
+            "description": "k8s install request node id",
+            "name": "installNodeId",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "result status",
+            "name": "result",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "example": "\"2021-01-01 00:00:00\"",
+            "description": "start time",
+            "name": "startTime",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "example": "\"2021-01-01 00:00:00\"",
+            "description": "end time",
+            "name": "endTime",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      },
+      "post": {
+        "description": "Create K8S Install Request NodeHistory",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "K8S-Install-NodeHistory"
+        ],
+        "summary": "Create K8S Install Request NodeHistory",
+        "parameters": [
+          {
+            "description": "Request Create K8S Install Node History",
+            "name": "request",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/command.RequestCreateK8SInstallNodeHistory"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      }
+    },
+    "/k8s/install/node/hist/{id}": {
+      "get": {
+        "description": "Search K8S Install Request Node History",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "K8S-Install-NodeHistory"
+        ],
+        "summary": "Search K8S Install Request Node History- 1 record",
+        "parameters": [
+          {
+            "type": "string",
+            "example": "\"kirnh-yyyymmddhhmmssXXX\"",
+            "description": "k8s install request node history id",
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      },
+      "put": {
+        "description": "Update K8S Install Request Node History",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "K8S-Install-NodeHistory"
+        ],
+        "summary": "Update K8S Install Request Node History",
+        "parameters": [
+          {
+            "type": "string",
+            "example": "\"kirnh-yyyymmddhhmmssXXX\"",
+            "description": "k8s install request node history id",
+            "name": "id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "description": "Request Update K8S Install Node History",
+            "name": "request",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/command.RequestUpdateK8SInstallNodeHistory"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      },
+      "delete": {
+        "description": "Delete K8S Install Request Node History",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "K8S-Install-NodeHistory"
+        ],
+        "summary": "Delete K8S Install Request Node History",
+        "parameters": [
+          {
+            "type": "string",
+            "example": "\"kirnh-yyyymmddhhmmssXXX\"",
+            "description": "k8s install request node history id",
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      }
+    },
+    "/k8s/install/node/{id}": {
+      "get": {
+        "description": "Search K8S Install Request Node",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "K8S-Install-Node"
+        ],
+        "summary": "Search K8S Install Request Node - 1 record",
+        "parameters": [
+          {
+            "type": "string",
+            "example": "\"kirn-yyyymmddhhmmssXXX\"",
+            "description": "k8s install request node id",
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      },
+      "put": {
+        "description": "Update K8S Install Request Node",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "K8S-Install-Node"
+        ],
+        "summary": "Update K8S Install Request Node",
+        "parameters": [
+          {
+            "type": "string",
+            "example": "\"kirn-yyyymmddhhmmssXXX\"",
+            "description": "k8s install request node id",
+            "name": "id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "description": "Request Update K8S Install Node",
+            "name": "request",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/command.RequestUpdateK8SInstallNode"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      },
+      "delete": {
+        "description": "Delete K8S Install Request Node",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "K8S-Install-Node"
+        ],
+        "summary": "Delete K8S Install Request Node",
+        "parameters": [
+          {
+            "type": "string",
+            "example": "\"kirn-yyyymmddhhmmssXXX\"",
+            "description": "k8s install request node id",
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/response.CommonResponse"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "command.RequestCreateCompConfigFileHistory": {
+      "type": "object",
+      "required": [
+        "infoId",
+        "storedFileName",
+        "storedPath"
+      ],
+      "properties": {
+        "infoId": {
+          "type": "string"
+        },
+        "storedFileName": {
+          "description": "실제 저장 파일 명",
+          "type": "string"
+        },
+        "storedPath": {
+          "description": "저장 경로",
+          "type": "string"
+        }
+      }
+    },
+    "command.RequestCreateCompConfigFileInfo": {
+      "type": "object",
+      "required": [
+        "fileName",
+        "installDetailId"
+      ],
+      "properties": {
+        "fileName": {
+          "description": "Config 파일 저장 명",
+          "type": "string"
+        },
+        "installDetailId": {
+          "description": "install_request_detail_info의 ID",
+          "type": "string"
+        }
+      }
+    },
+    "command.RequestCreateK8SClusterInfo": {
+      "type": "object",
+      "required": [
+        "clusterName",
+        "clusterToken",
+        "etcdType"
+      ],
+      "properties": {
+        "clusterName": {
+          "description": "Cluster 명",
+          "type": "string"
+        },
+        "clusterToken": {
+          "description": "클러스터 조인 토큰",
+          "type": "string"
+        },
+        "etcdType": {
+          "description": "Etcd Type",
+          "type": "string"
+        }
+      }
+    },
+    "command.RequestCreateK8SClusterNodeInfo": {
+      "type": "object",
+      "required": [
+        "clusterId",
+        "nodeName",
+        "role",
+        "serverId"
+      ],
+      "properties": {
+        "clusterId": {
+          "description": "k8s_install_request_cluster_info의 id",
+          "type": "string"
+        },
+        "nodeName": {
+          "description": "노드 명",
+          "type": "string"
+        },
+        "role": {
+          "description": "MASTER, WORKER",
+          "type": "string"
+        },
+        "serverId": {
+          "description": "server_info의 id",
+          "type": "string"
+        }
+      }
+    },
+    "command.RequestCreateK8SInstallCluster": {
+      "type": "object",
+      "required": [
+        "clusterName",
+        "clusterToken",
+        "userKey"
+      ],
+      "properties": {
+        "clusterName": {
+          "description": "Cluster 명",
+          "type": "string"
+        },
+        "clusterToken": {
+          "description": "클러스터 조인 토큰",
+          "type": "string"
+        },
+        "etcdType": {
+          "description": "Etcd Type",
+          "type": "string"
+        },
+        "userKey": {
+          "description": "요청 유저 정보 Key",
+          "type": "string"
+        }
+      }
+    },
+    "command.RequestCreateK8SInstallNode": {
+      "type": "object",
+      "required": [
+        "installClusterId",
+        "nodeName",
+        "role",
+        "serverId"
+      ],
+      "properties": {
+        "installClusterId": {
+          "description": "k8s_install_request_cluster_info의 id",
+          "type": "string"
+        },
+        "nodeName": {
+          "description": "노드 명",
+          "type": "string"
+        },
+        "role": {
+          "description": "MASTER, WORKER",
+          "type": "string"
+        },
+        "serverId": {
+          "description": "server_info의 id",
+          "type": "string"
+        }
+      }
+    },
+    "command.RequestCreateK8SInstallNodeHistory": {
+      "type": "object",
+      "required": [
+        "installNodeId"
+      ],
+      "properties": {
+        "installNodeId": {
+          "description": "K8S_INSTALL_REQUEST_NODE_INFO 의 ID",
+          "type": "string"
+        }
+      }
+    },
+    "command.RequestInsertInstallReqDetailInfo": {
+      "type": "object",
+      "required": [
+        "componentId",
+        "infoId",
+        "installType"
+      ],
+      "properties": {
+        "clusterId": {
+          "description": "K8S_CLUSTER_INFO의 ID",
+          "type": "string"
+        },
+        "componentId": {
+          "description": "COMPONENT_LIST의 ID",
+          "type": "integer"
+        },
+        "infoId": {
+          "description": "INSTALL_REQUEST_INFO의 ID",
+          "type": "string"
+        },
+        "installType": {
+          "description": "INSTALL_TYPE (K8S, DOCKER, VM)",
+          "type": "string"
+        },
+        "serverId": {
+          "description": "SERVER_INFO의 ID",
+          "type": "string"
+        }
+      }
+    },
+    "command.RequestInsertInstallReqHistory": {
+      "type": "object",
+      "required": [
+        "detailInfoId"
+      ],
+      "properties": {
+        "detailInfoId": {
+          "description": "INSTALL_REQUEST_DETAIL_INFO 아이디",
+          "type": "string"
+        }
+      }
+    },
+    "command.RequestInsertInstallReqInfo": {
+      "type": "object",
+      "required": [
+        "userKey"
+      ],
+      "properties": {
+        "userKey": {
+          "description": "USER_KEY",
+          "type": "string"
+        }
+      }
+    },
+    "command.RequestSearchComConfigFileInfoWithHistory": {
+      "type": "object",
+      "properties": {
+        "configType": {
+          "type": "string"
+        },
+        "deleteYn": {
+          "type": "string"
+        }
+      }
+    },
+    "command.RequestSearchCompConfigFileHistory": {
+      "type": "object",
+      "properties": {
+        "deleteYn": {
+          "description": "삭제 유무",
+          "type": "string"
+        },
+        "id": {
+          "description": "ID",
+          "type": "string"
+        },
+        "infoId": {
+          "description": "COMPONENT_CONFIG_FILE_INFO ID",
+          "type": "string"
+        },
+        "limit": {
+          "description": "Paging To",
+          "type": "integer",
+          "minimum": 0
+        },
+        "orderBy": {
+          "description": "CREEATED_AT 컬럼 기준 ORDERBY (Default createdAt desc)",
+          "type": "string"
+        },
+        "page": {
+          "description": "Paging From",
+          "type": "integer",
+          "minimum": 0
+        },
+        "storedFileName": {
+          "description": "실제 저장 파일 명",
+          "type": "string"
+        }
+      }
+    },
+    "command.RequestSearchCompConfigFileInfo": {
+      "type": "object",
+      "properties": {
+        "deleteYn": {
+          "description": "삭제 여부",
+          "type": "string"
+        },
+        "fileName": {
+          "description": "Config 파일 저장 명",
+          "type": "string"
+        },
+        "id": {
+          "description": "ID",
+          "type": "string"
+        },
+        "installDetailId": {
+          "description": "install_request_detail_info의 ID",
+          "type": "string"
+        },
+        "limit": {
+          "description": "Paging To",
+          "type": "integer",
+          "minimum": 0
+        },
+        "orderBy": {
+          "description": "CREEATED_AT 컬럼 기준 ORDERBY (Default createdAt desc)",
+          "type": "string"
+        },
+        "page": {
+          "description": "Paging From",
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "command.RequestSearchConfigFileInfo": {
+      "type": "object",
+      "required": [
+        "storedPath"
+      ],
+      "properties": {
+        "storedFileName": {
+          "type": "string"
+        },
+        "storedPath": {
+          "type": "string"
+        }
+      }
+    },
+    "command.RequestSearchDefaultCompConfigFile": {
+      "type": "object",
+      "required": [
+        "componentName",
+        "installType",
+        "version"
+      ],
+      "properties": {
+        "componentName": {
+          "description": "컴포넌트 명",
+          "type": "string"
+        },
+        "installType": {
+          "description": "K8s,Docker, VM",
+          "type": "string"
+        },
+        "version": {
+          "description": "컴포넌트 버전",
+          "type": "string"
+        }
+      }
+    },
+    "command.RequestSearchInstallInfoWithDetail": {
+      "type": "object",
+      "properties": {
+        "componentId": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "deleteYn": {
+          "description": "DeleteYn 컬럼",
+          "type": "string"
+        },
+        "installType": {
+          "type": "string"
+        },
+        "limit": {
+          "description": "Paging To",
+          "type": "integer",
+          "minimum": 0
+        },
+        "orderBy": {
+          "description": "CREEATED_AT 컬럼 기준 ORDERBY (Default createdAt desc)",
+          "type": "string"
+        },
+        "page": {
+          "description": "Paging From",
+          "type": "integer",
+          "minimum": 0
+        },
+        "status": {
+          "description": "STATUS",
+          "type": "string"
+        },
+        "userKey": {
+          "description": "USER_KEY",
+          "type": "string"
+        }
+      }
+    },
+    "command.RequestSearchInstallReqDetailInfo": {
+      "type": "object",
+      "properties": {
+        "clusterId": {
+          "description": "K8S_CLUSTER_INFO의 ID",
+          "type": "string"
+        },
+        "componentId": {
+          "description": "COMPONENT_LIST의 ID",
+          "type": "integer"
+        },
+        "deleteYn": {
+          "description": "DeleteYn 컬럼",
+          "type": "string"
+        },
+        "id": {
+          "description": "ID",
+          "type": "string"
+        },
+        "infoId": {
+          "description": "INSTALL_REQUEST_INFO의 ID",
+          "type": "string"
+        },
+        "installType": {
+          "description": "INSTALL_TYPE (K8S, DOCKER, VM)",
+          "type": "string"
+        },
+        "limit": {
+          "description": "Paging To",
+          "type": "integer",
+          "minimum": 0
+        },
+        "orderBy": {
+          "description": "CREEATED_AT 컬럼 기준 ORDERBY (Default createdAt desc)",
+          "type": "string"
+        },
+        "page": {
+          "description": "Paging From",
+          "type": "integer",
+          "minimum": 0
+        },
+        "severId": {
+          "description": "SERVER_INFO의 ID",
+          "type": "string"
+        },
+        "status": {
+          "description": "설치 결과 (READY, PROGRESS, SUCCESS, FAIL)",
+          "type": "string"
+        },
+        "webUrl": {
+          "description": "COMPONENT WEB URL",
+          "type": "string"
+        }
+      }
+    },
+    "command.RequestSearchInstallReqHistory": {
+      "type": "object",
+      "properties": {
+        "detailInfoId": {
+          "description": "INSTALL_REQUEST_DETAIL_INFO 아이디",
+          "type": "string"
+        },
+        "detailLog": {
+          "description": "상세 로그",
+          "type": "string"
+        },
+        "endTime": {
+          "description": "설치 종료 일자",
+          "type": "integer"
+        },
+        "id": {
+          "description": "ID",
+          "type": "string"
+        },
+        "limit": {
+          "description": "Paging To",
+          "type": "integer",
+          "minimum": 0
+        },
+        "orderBy": {
+          "description": "CREEATED_AT 컬럼 기준 ORDERBY (Default createdAt desc)",
+          "type": "string"
+        },
+        "page": {
+          "description": "Paging From",
+          "type": "integer",
+          "minimum": 0
+        },
+        "result": {
+          "description": "성공 여부 (SUCCESS, FAIL)",
+          "type": "string"
+        },
+        "startTime": {
+          "description": "설치 시작 일자",
+          "type": "integer"
+        }
+      }
+    },
+    "command.RequestSearchInstallReqInfo": {
+      "type": "object",
+      "properties": {
+        "deleteYn": {
+          "description": "DeleteYn 컬럼",
+          "type": "string"
+        },
+        "id": {
+          "description": "ID",
+          "type": "string"
+        },
+        "limit": {
+          "description": "Paging To",
+          "type": "integer",
+          "minimum": 0
+        },
+        "orderBy": {
+          "description": "CREEATED_AT 컬럼 기준 ORDERBY (Default createdAt desc)",
+          "type": "string"
+        },
+        "page": {
+          "description": "Paging From",
+          "type": "integer",
+          "minimum": 0
+        },
+        "status": {
+          "description": "STATUS",
+          "type": "string"
+        },
+        "userKey": {
+          "description": "USER_KEY",
+          "type": "string"
+        }
+      }
+    },
+    "command.RequestUpdateCompConfigContents": {
+      "type": "object",
+      "required": [
+        "componentName",
+        "contents",
+        "fileName",
+        "installDetailId",
+        "installType",
+        "version"
+      ],
+      "properties": {
+        "componentName": {
+          "description": "컴포넌트 명",
+          "type": "string"
+        },
+        "contents": {
+          "description": "CONTENTS 내용",
+          "type": "string"
+        },
+        "fileName": {
+          "description": "config 파일 명",
+          "type": "string"
+        },
+        "installDetailId": {
+          "description": "INSTALL_REQUEST_DETAIL_INFO 테이블 ID",
+          "type": "string"
+        },
+        "installType": {
+          "description": "K8s,Docker, VM",
+          "type": "string"
+        },
+        "version": {
+          "description": "컴포넌트 버전",
+          "type": "string"
+        }
+      }
+    },
+    "command.RequestUpdateInstallReqDetailInfo": {
+      "type": "object",
+      "properties": {
+        "deleteYn": {
+          "description": "DeleteYn 컬럼",
+          "type": "string"
+        },
+        "status": {
+          "description": "설치 결과 (READY, PROGRESS, SUCCESS, FAIL)",
+          "type": "string"
+        }
+      }
+    },
+    "command.RequestUpdateInstallReqHistory": {
+      "type": "object",
+      "properties": {
+        "detailLog": {
+          "description": "상세 로그",
+          "type": "string"
+        },
+        "endTime": {
+          "description": "설치 종료 일자 (unix timestamp)",
+          "type": "integer"
+        },
+        "result": {
+          "description": "성공 여부 (SUCCESS, FAIL)",
+          "type": "string"
+        }
+      }
+    },
+    "command.RequestUpdateInstallReqInfo": {
+      "type": "object",
+      "properties": {
+        "deleteYn": {
+          "description": "DeleteYn 컬럼",
+          "type": "string"
+        },
+        "status": {
+          "description": "STATUS",
+          "type": "string"
+        }
+      }
+    },
+    "command.RequestUpdateK8SClusterInfo": {
+      "type": "object",
+      "properties": {
+        "clusterName": {
+          "description": "Cluster 명",
+          "type": "string"
+        },
+        "clusterToken": {
+          "description": "클러스터 조인 토큰",
+          "type": "string"
+        },
+        "deleteYn": {
+          "description": "삭제 여부",
+          "type": "string"
+        }
+      }
+    },
+    "command.RequestUpdateK8SClusterNodeInfo": {
+      "type": "object",
+      "properties": {
+        "deleteYn": {
+          "description": "삭제 여부",
+          "type": "string"
+        },
+        "nodeName": {
+          "description": "노드 명",
+          "type": "string"
+        },
+        "role": {
+          "description": "MASTER, WORKER",
+          "type": "string"
+        }
+      }
+    },
+    "command.RequestUpdateK8SInstallNode": {
+      "type": "object",
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "description": "READY, PROGRESS, SUCCESS, FAIL",
+          "type": "string"
+        }
+      }
+    },
+    "command.RequestUpdateK8SInstallNodeHistory": {
+      "type": "object",
+      "properties": {
+        "detailLog": {
+          "description": "상세로그",
+          "type": "string"
+        },
+        "endTime": {
+          "description": "설치 종료 일자",
+          "type": "string"
+        },
+        "result": {
+          "description": "성공 여부 (SUCCESS, FAIL)",
+          "type": "string"
+        }
+      }
+    },
+    "command.RequestUpdateK8sInstallCluster": {
+      "type": "object",
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "description": "설치 결과 (READY, PROGRESS, SUCCESS, FAIL)",
+          "type": "string"
+        }
+      }
+    },
+    "response.CommonResponse": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "description": "Response Data"
+        },
+        "error": {
+          "description": "Error Code (ex. \"Invalid Request\", \"Parsing Error\", etc...')",
+          "type": "string"
+        },
+        "message": {
+          "description": "Response Message",
+          "type": "string"
+        },
+        "path": {
+          "description": "Request Path",
+          "type": "string"
+        },
+        "status": {
+          "description": "Status Code (ex. 200, 400, 500, etc...)",
+          "type": "integer"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+version: '3.7'
+services:
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+    volumes:
+      - ./monitoring/prometheus/config/prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./monitoring/prometheus/data:/prometheus
+    ports:
+      - 9090:9090
+    command: # web.enalbe-lifecycle은 재시작없이 설정파일들을 reload 할 수 있게 해줌
+      - '--web.enable-lifecycle'
+      - '--config.file=/etc/prometheus/prometheus.yml'
+    restart: always
+
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    ports:
+      - 3000:3000
+    volumes:
+      - ./monitoring/grafana/data:/var/lib/grafana
+    restart: always
+
+  mysql:
+    image: mysql
+    container_name: mysql
+    ports:
+      - 3306:3306 # HOST:CONTAINER
+    environment:
+      - MYSQL_DATABASE=sampleDB
+      - MYSQL_ROOT_PASSWORD=admin
+      - MYSQL_USER=sample
+      - MYSQL_PASSWORD=sample-pass
+      - TZ=UTC
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+    volumes:
+      - ./mysql/data:/var/lib/mysql

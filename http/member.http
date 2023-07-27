@@ -1,0 +1,13 @@
+### 1. ping 테스트
+GET localhost:8080/member/v1/ping
+
+### Member API 테스트
+
+###1. Member 등록
+POST localhost:8080/member/v1/regist
+Content-Type: application/json
+
+{
+  "name": "홍길동",
+  "age": 19
+}
